@@ -1,0 +1,182 @@
+
+:root{
+    --color-1: white;
+    --color-2: rgb(228, 228, 228);
+    --color-3: #4b3f75c2;
+    --color-4: #4b3f75;
+    --color-5: #554786;
+    --color-6: rgba(202, 202, 202, 0.342);
+    --color-7: #ff93f100;
+    --color-8: #70b3dd;
+    --color-9: rgba(255, 255, 255, 0);
+    --box-shadow-1: -8px -8px 10px #ffdffc2c, 8px 8px 10px rgba(70, 70, 70, 0.226);
+    --box-shadow-2: 1px 3px 5px #0000009f;
+    --box-shadow-3: 2px 5px 8px #0000009f;
+    --box-shadow-4: -3px -3px 5px #ffe8fd25, 3px 3px 5px #1c1a244d;
+    --box-shadow-5: -1px -1px 3px #ffe8fd25, 1px 1px 3px #1c1a244d;
+    --box-shadow-6: inset -4px -4px 6px #ffdffc2c, inset 4px 4px 6px rgba(70, 70, 70, 0.411);
+    --background-image-1: linear-gradient(to top left, #6241ce, #ff93f1);
+    --background-image-2: linear-gradient(to top left, #40375f, #787a9b);
+}
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    height: 100vh;
+    padding: 20px 0px 100px;
+    margin: 0px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: lighter;
+    background-image: var(--background-image-1);
+    background-repeat: no-repeat;
+    color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loto{
+    font-size: 22px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--color-3);
+    font-weight: 800;
+    box-shadow: var(--box-shadow-1);
+}
+.loto-div{
+    width: 270px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    box-shadow: var(--box-shadow-1);
+}
+.loto-n{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 5px;
+    background-color: var(--color-5);
+    color: var(--color-2);
+    box-shadow: var(--box-shadow-3);
+    background-image: var(--background-image-2);
+    font-weight: 600;
+    cursor: pointer;
+}
+.loto-n:active{
+    margin-bottom: -1px;
+    box-shadow: var(--box-shadow-2); 
+}
+.winning, .your{
+    width: 290px;
+    font-size: 18px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+    border-radius: 5px;
+    color: var(--color-4);
+    font-weight: 800;
+    box-shadow: var(--box-shadow-4);
+}
+.winning-div, .your-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.winning-n{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 5px;
+    color: var(--color-2);
+    font-weight: 600;
+    box-shadow: var(--box-shadow-6);
+}
+.your-n{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    box-shadow: var(--box-shadow-3);
+    background-color: var(--color-5);
+    color: var(--color-2);
+    font-weight: 600;
+}
+::placeholder{
+    color: var(--color-6); 
+    
+}
+.your-n:hover{
+    margin-bottom: -1px;
+    box-shadow: var(--box-shadow-2); 
+}
+.your-n:focus{
+    outline: none;
+}
+.btn-div{
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+.random-div, .play-div, .reset-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 10px;
+    border: none;
+    color: var(--color-4);
+    font-weight: 900;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    background-color: var(--color-7);
+    box-shadow: var(--box-shadow-4);
+}
+.random, .reset{
+    width: 110px;
+    height: 22px;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-4);
+    font-weight: 800;
+    font-size: 12px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    background-color: var(--color-7);
+    box-shadow: var(--box-shadow-4);
+}
+.play:focus, .random:focus, .reset:active{
+    box-shadow: var(--box-shadow-5);
+}
